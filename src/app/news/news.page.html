@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Todays News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let article of data?.articles" (click)="newsSinglePage(article)">
+    <ion-card-header>
+        <ion-card-title>{{article.title}}</ion-card-title>
+        <p></p>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

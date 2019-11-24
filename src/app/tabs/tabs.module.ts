@@ -6,13 +6,26 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
+import { NewsPageModule } from '../news/news.module';
+import { NewsSinglePageModule } from '../news-single/news-single.module';
+import { Tab1PageModule } from '../tab1/tab1.module';
+import { Tab2PageModule } from '../tab2/tab2.module';
+import { Tab3PageModule } from '../tab3/tab3.module';
+
+
+
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    TabsPageRoutingModule
+    TabsPageRoutingModule,
+    NewsPageModule,
+    NewsSinglePageModule,
+    Tab1PageModule,
+    Tab2PageModule,
+    Tab3PageModule
   ],
   declarations: [TabsPage]
 })
